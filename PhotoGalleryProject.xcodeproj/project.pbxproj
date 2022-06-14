@@ -16,6 +16,7 @@
 		0684AAEF28584B8B00236B13 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AAEE28584B8B00236B13 /* ForYouViewController.swift */; };
 		0684AAF128584BA800236B13 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AAF028584BA800236B13 /* AlbumsViewController.swift */; };
 		0684AAF328584BC800236B13 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AAF228584BC800236B13 /* SearchViewController.swift */; };
+		0684AAFD285894FB00236B13 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684AAFC285894FB00236B13 /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0684AAEE28584B8B00236B13 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		0684AAF028584BA800236B13 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		0684AAF228584BC800236B13 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0684AAFC285894FB00236B13 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,75 @@
 		0684AAD528584A2700236B13 /* PhotoGalleryProject */ = {
 			isa = PBXGroup;
 			children = (
-				0684AAD628584A2700236B13 /* AppDelegate.swift */,
-				0684AAD828584A2700236B13 /* SceneDelegate.swift */,
-				0684AAEA28584B2000236B13 /* MainTabBarController.swift */,
-				0684AAEC28584B6C00236B13 /* MediaViewController.swift */,
-				0684AAEE28584B8B00236B13 /* ForYouViewController.swift */,
-				0684AAF028584BA800236B13 /* AlbumsViewController.swift */,
-				0684AAF228584BC800236B13 /* SearchViewController.swift */,
+				0684AAF42858941E00236B13 /* AppDelegate */,
+				0684AAFB285894E200236B13 /* Model */,
+				0684AAF52858942D00236B13 /* ViewControllers */,
 				0684AADF28584A2C00236B13 /* Assets.xcassets */,
 				0684AAE128584A2C00236B13 /* LaunchScreen.storyboard */,
 				0684AAE428584A2C00236B13 /* Info.plist */,
 			);
 			path = PhotoGalleryProject;
+			sourceTree = "<group>";
+		};
+		0684AAF42858941E00236B13 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAD628584A2700236B13 /* AppDelegate.swift */,
+				0684AAD828584A2700236B13 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0684AAF52858942D00236B13 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAEA28584B2000236B13 /* MainTabBarController.swift */,
+				0684AAF82858946500236B13 /* MediaView */,
+				0684AAF92858946C00236B13 /* ForYouView */,
+				0684AAF62858944900236B13 /* AlbumView */,
+				0684AAFA2858947500236B13 /* SearchView */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0684AAF62858944900236B13 /* AlbumView */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAF028584BA800236B13 /* AlbumsViewController.swift */,
+			);
+			path = AlbumView;
+			sourceTree = "<group>";
+		};
+		0684AAF82858946500236B13 /* MediaView */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAEC28584B6C00236B13 /* MediaViewController.swift */,
+			);
+			path = MediaView;
+			sourceTree = "<group>";
+		};
+		0684AAF92858946C00236B13 /* ForYouView */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAEE28584B8B00236B13 /* ForYouViewController.swift */,
+			);
+			path = ForYouView;
+			sourceTree = "<group>";
+		};
+		0684AAFA2858947500236B13 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAF228584BC800236B13 /* SearchViewController.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		0684AAFB285894E200236B13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0684AAFC285894FB00236B13 /* AlbumModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +210,7 @@
 				0684AAED28584B6C00236B13 /* MediaViewController.swift in Sources */,
 				0684AAEF28584B8B00236B13 /* ForYouViewController.swift in Sources */,
 				0684AAD728584A2700236B13 /* AppDelegate.swift in Sources */,
+				0684AAFD285894FB00236B13 /* AlbumModel.swift in Sources */,
 				0684AAEB28584B2000236B13 /* MainTabBarController.swift in Sources */,
 				0684AAD928584A2700236B13 /* SceneDelegate.swift in Sources */,
 			);
