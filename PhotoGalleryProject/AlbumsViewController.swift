@@ -12,6 +12,7 @@ class AlbumsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHierarchy()
+        configureButtonAdd()
     }
     
     // MARK: - Setup Hierarchy
@@ -19,5 +20,12 @@ class AlbumsViewController: UIViewController {
         view.backgroundColor = .white
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Альбомы"
+    }
+    
+    // MARK: - Create Add button toolBar
+    private func configureButtonAdd() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
+                                                           target: self,
+                                                           action: nil)
     }
 }
